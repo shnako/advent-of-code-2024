@@ -15,6 +15,13 @@ val neighbours2D = arrayOf(
     arrayOf(+1, +1),
 )
 
+val neighbours2DNoDiagonals = arrayOf(
+    arrayOf(-1, +0),
+    arrayOf(+0, -1),
+    arrayOf(+0, +1),
+    arrayOf(+1, +0),
+)
+
 fun are2DCoordinatesValid(x: Int, y: Int, grid2D: Array<CharArray>): Boolean {
     if (x < 0 || y < 0) {
         return false
